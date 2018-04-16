@@ -1,0 +1,437 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85071D5B396662FE04C27D81 /* libPods-Platformaly.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F3D0FB0CCBDB94EB6A8B96A /* libPods-Platformaly.a */; };
+		95A6B1691CDA25570004EB3C /* Platformaly.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B1561CDA25570004EB3C /* Platformaly.m */; };
+		95A6B16A1CDA25570004EB3C /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B1581CDA25570004EB3C /* WebViewController.m */; };
+		95A6B16B1CDA25570004EB3C /* PlatformalyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B15B1CDA25570004EB3C /* PlatformalyView.m */; };
+		95A6B16C1CDA25570004EB3C /* Operator.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B15E1CDA25570004EB3C /* Operator.m */; };
+		95A6B16D1CDA25570004EB3C /* PlatformalyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B1601CDA25570004EB3C /* PlatformalyData.m */; };
+		95A6B16E1CDA25570004EB3C /* PhoneNumberCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B1621CDA25570004EB3C /* PhoneNumberCell.m */; };
+		95A6B16F1CDA25570004EB3C /* OperatorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B1651CDA25570004EB3C /* OperatorCell.m */; };
+		95A6B1701CDA25570004EB3C /* NSDictionary+SafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A6B1681CDA25570004EB3C /* NSDictionary+SafeAccess.m */; };
+		95A6B1741CDA266B0004EB3C /* Platformaly.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95A6B1551CDA25570004EB3C /* Platformaly.h */; };
+		95A6B1751CDA26700004EB3C /* PlatformalyView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95A6B15A1CDA25570004EB3C /* PlatformalyView.h */; };
+		95A6B1761CDA26720004EB3C /* Operator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95A6B15D1CDA25570004EB3C /* Operator.h */; };
+		95A6B1771CDA26750004EB3C /* PlatformalyData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 95A6B15F1CDA25570004EB3C /* PlatformalyData.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		95A6B12F1CDA24C90004EB3C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				95A6B1741CDA266B0004EB3C /* Platformaly.h in CopyFiles */,
+				95A6B1751CDA26700004EB3C /* PlatformalyView.h in CopyFiles */,
+				95A6B1761CDA26720004EB3C /* Operator.h in CopyFiles */,
+				95A6B1771CDA26750004EB3C /* PlatformalyData.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3F3D0FB0CCBDB94EB6A8B96A /* libPods-Platformaly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Platformaly.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD3DD9477E05DAE7304E586 /* Pods-Platformaly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Platformaly.release.xcconfig"; path = "Pods/Target Support Files/Pods-Platformaly/Pods-Platformaly.release.xcconfig"; sourceTree = "<group>"; };
+		956E0D391CDA3356007C0D5E /* beeline_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beeline_alt.png; sourceTree = "<group>"; };
+		956E0D3A1CDA335C007C0D5E /* beeline_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beeline_icon.png; sourceTree = "<group>"; };
+		956E0D3B1CDA3361007C0D5E /* megafon_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = megafon_alt.png; sourceTree = "<group>"; };
+		956E0D3C1CDA3365007C0D5E /* megafon_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = megafon_icon.png; sourceTree = "<group>"; };
+		956E0D3D1CDA3369007C0D5E /* mts_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mts_alt.png; sourceTree = "<group>"; };
+		956E0D3E1CDA336D007C0D5E /* mts_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mts_icon.png; sourceTree = "<group>"; };
+		956E0D3F1CDA3372007C0D5E /* tele2_alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tele2_alt.png; sourceTree = "<group>"; };
+		956E0D401CDA3375007C0D5E /* tele2_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tele2_icon.png; sourceTree = "<group>"; };
+		95A6B1311CDA24C90004EB3C /* libPlatformaly.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPlatformaly.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		95A6B1551CDA25570004EB3C /* Platformaly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Platformaly.h; sourceTree = "<group>"; };
+		95A6B1561CDA25570004EB3C /* Platformaly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Platformaly.m; sourceTree = "<group>"; };
+		95A6B1571CDA25570004EB3C /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		95A6B1581CDA25570004EB3C /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		95A6B1591CDA25570004EB3C /* Platformaly.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Platformaly.storyboard; sourceTree = "<group>"; };
+		95A6B15A1CDA25570004EB3C /* PlatformalyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformalyView.h; sourceTree = "<group>"; };
+		95A6B15B1CDA25570004EB3C /* PlatformalyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformalyView.m; sourceTree = "<group>"; };
+		95A6B15C1CDA25570004EB3C /* PlatformalyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlatformalyView.xib; sourceTree = "<group>"; };
+		95A6B15D1CDA25570004EB3C /* Operator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operator.h; sourceTree = "<group>"; };
+		95A6B15E1CDA25570004EB3C /* Operator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operator.m; sourceTree = "<group>"; };
+		95A6B15F1CDA25570004EB3C /* PlatformalyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformalyData.h; sourceTree = "<group>"; };
+		95A6B1601CDA25570004EB3C /* PlatformalyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformalyData.m; sourceTree = "<group>"; };
+		95A6B1611CDA25570004EB3C /* PhoneNumberCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneNumberCell.h; sourceTree = "<group>"; };
+		95A6B1621CDA25570004EB3C /* PhoneNumberCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneNumberCell.m; sourceTree = "<group>"; };
+		95A6B1631CDA25570004EB3C /* PhoneNumberCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneNumberCell.xib; sourceTree = "<group>"; };
+		95A6B1641CDA25570004EB3C /* OperatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperatorCell.h; sourceTree = "<group>"; };
+		95A6B1651CDA25570004EB3C /* OperatorCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperatorCell.m; sourceTree = "<group>"; };
+		95A6B1661CDA25570004EB3C /* OperatorCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OperatorCell.xib; sourceTree = "<group>"; };
+		95A6B1671CDA25570004EB3C /* NSDictionary+SafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SafeAccess.h"; sourceTree = "<group>"; };
+		95A6B1681CDA25570004EB3C /* NSDictionary+SafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SafeAccess.m"; sourceTree = "<group>"; };
+		D8C9F13B2966B1D157858621 /* Pods-Platformaly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Platformaly.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Platformaly/Pods-Platformaly.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95A6B12E1CDA24C90004EB3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85071D5B396662FE04C27D81 /* libPods-Platformaly.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06B3FDFDDA006DB2F230D5E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8C9F13B2966B1D157858621 /* Pods-Platformaly.debug.xcconfig */,
+				7BD3DD9477E05DAE7304E586 /* Pods-Platformaly.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95A6B1281CDA24C90004EB3C = {
+			isa = PBXGroup;
+			children = (
+				95A6B1331CDA24C90004EB3C /* Platformaly */,
+				95A6B1321CDA24C90004EB3C /* Products */,
+				06B3FDFDDA006DB2F230D5E2 /* Pods */,
+				E30F986A6409465770D576B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		95A6B1321CDA24C90004EB3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95A6B1311CDA24C90004EB3C /* libPlatformaly.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95A6B1331CDA24C90004EB3C /* Platformaly */ = {
+			isa = PBXGroup;
+			children = (
+				95A6B1551CDA25570004EB3C /* Platformaly.h */,
+				95A6B1561CDA25570004EB3C /* Platformaly.m */,
+				95A6B19E1CDA28550004EB3C /* Controllers */,
+				95A6B19F1CDA28760004EB3C /* PlatformalyView */,
+				95A6B1A01CDA287E0004EB3C /* Models */,
+				95A6B1A21CDA28AE0004EB3C /* Utils */,
+				95A6B1A41CDA28F40004EB3C /* Resources */,
+			);
+			path = Platformaly;
+			sourceTree = "<group>";
+		};
+		95A6B19E1CDA28550004EB3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95A6B1571CDA25570004EB3C /* WebViewController.h */,
+				95A6B1581CDA25570004EB3C /* WebViewController.m */,
+				95A6B1591CDA25570004EB3C /* Platformaly.storyboard */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		95A6B19F1CDA28760004EB3C /* PlatformalyView */ = {
+			isa = PBXGroup;
+			children = (
+				95A6B15A1CDA25570004EB3C /* PlatformalyView.h */,
+				95A6B15B1CDA25570004EB3C /* PlatformalyView.m */,
+				95A6B15C1CDA25570004EB3C /* PlatformalyView.xib */,
+				95A6B1A11CDA28A30004EB3C /* Cells */,
+			);
+			name = PlatformalyView;
+			sourceTree = "<group>";
+		};
+		95A6B1A01CDA287E0004EB3C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95A6B15D1CDA25570004EB3C /* Operator.h */,
+				95A6B15E1CDA25570004EB3C /* Operator.m */,
+				95A6B15F1CDA25570004EB3C /* PlatformalyData.h */,
+				95A6B1601CDA25570004EB3C /* PlatformalyData.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		95A6B1A11CDA28A30004EB3C /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				95A6B1611CDA25570004EB3C /* PhoneNumberCell.h */,
+				95A6B1621CDA25570004EB3C /* PhoneNumberCell.m */,
+				95A6B1631CDA25570004EB3C /* PhoneNumberCell.xib */,
+				95A6B1641CDA25570004EB3C /* OperatorCell.h */,
+				95A6B1651CDA25570004EB3C /* OperatorCell.m */,
+				95A6B1661CDA25570004EB3C /* OperatorCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		95A6B1A21CDA28AE0004EB3C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				95A6B1671CDA25570004EB3C /* NSDictionary+SafeAccess.h */,
+				95A6B1681CDA25570004EB3C /* NSDictionary+SafeAccess.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		95A6B1A41CDA28F40004EB3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				956E0D391CDA3356007C0D5E /* beeline_alt.png */,
+				956E0D3A1CDA335C007C0D5E /* beeline_icon.png */,
+				956E0D3B1CDA3361007C0D5E /* megafon_alt.png */,
+				956E0D3C1CDA3365007C0D5E /* megafon_icon.png */,
+				956E0D3D1CDA3369007C0D5E /* mts_alt.png */,
+				956E0D3E1CDA336D007C0D5E /* mts_icon.png */,
+				956E0D3F1CDA3372007C0D5E /* tele2_alt.png */,
+				956E0D401CDA3375007C0D5E /* tele2_icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		E30F986A6409465770D576B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F3D0FB0CCBDB94EB6A8B96A /* libPods-Platformaly.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95A6B1301CDA24C90004EB3C /* Platformaly */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95A6B13A1CDA24C90004EB3C /* Build configuration list for PBXNativeTarget "Platformaly" */;
+			buildPhases = (
+				3450B83F9BF8C53936D83250 /* Check Pods Manifest.lock */,
+				95A6B12D1CDA24C90004EB3C /* Sources */,
+				95A6B12E1CDA24C90004EB3C /* Frameworks */,
+				95A6B12F1CDA24C90004EB3C /* CopyFiles */,
+				1052FA8C817B85B10B3290DE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Platformaly;
+			productName = Platformaly;
+			productReference = 95A6B1311CDA24C90004EB3C /* libPlatformaly.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95A6B1291CDA24C90004EB3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Platformaly;
+				TargetAttributes = {
+					95A6B1301CDA24C90004EB3C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 95A6B12C1CDA24C90004EB3C /* Build configuration list for PBXProject "Platformaly" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 95A6B1281CDA24C90004EB3C;
+			productRefGroup = 95A6B1321CDA24C90004EB3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95A6B1301CDA24C90004EB3C /* Platformaly */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1052FA8C817B85B10B3290DE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Platformaly/Pods-Platformaly-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3450B83F9BF8C53936D83250 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95A6B12D1CDA24C90004EB3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95A6B16F1CDA25570004EB3C /* OperatorCell.m in Sources */,
+				95A6B16B1CDA25570004EB3C /* PlatformalyView.m in Sources */,
+				95A6B16C1CDA25570004EB3C /* Operator.m in Sources */,
+				95A6B1691CDA25570004EB3C /* Platformaly.m in Sources */,
+				95A6B16A1CDA25570004EB3C /* WebViewController.m in Sources */,
+				95A6B16D1CDA25570004EB3C /* PlatformalyData.m in Sources */,
+				95A6B16E1CDA25570004EB3C /* PhoneNumberCell.m in Sources */,
+				95A6B1701CDA25570004EB3C /* NSDictionary+SafeAccess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95A6B1381CDA24C90004EB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95A6B1391CDA24C90004EB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95A6B13B1CDA24C90004EB3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8C9F13B2966B1D157858621 /* Pods-Platformaly.debug.xcconfig */;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		95A6B13C1CDA24C90004EB3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD3DD9477E05DAE7304E586 /* Pods-Platformaly.release.xcconfig */;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95A6B12C1CDA24C90004EB3C /* Build configuration list for PBXProject "Platformaly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95A6B1381CDA24C90004EB3C /* Debug */,
+				95A6B1391CDA24C90004EB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95A6B13A1CDA24C90004EB3C /* Build configuration list for PBXNativeTarget "Platformaly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95A6B13B1CDA24C90004EB3C /* Debug */,
+				95A6B13C1CDA24C90004EB3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95A6B1291CDA24C90004EB3C /* Project object */;
+}

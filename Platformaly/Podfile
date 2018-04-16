@@ -1,0 +1,11 @@
+platform :ios, "7.0"  
+
+target "Platformaly" do  
+
+pod 'JTHamburgerButton'  
+
+end  
+
+target "Platformaly" do  
+
+end 
